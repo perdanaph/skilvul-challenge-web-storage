@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Web-Local-Storage</title>
+</head>
+<body>
+  <main>
+    <div class="container">  
+      <form id="contact" action="" method="post">
+        <h4>Form</h4>
+        <fieldset>
+          <input id="firstname" placeholder="First Name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <input id="lastname" placeholder="Last Name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <select id="gender" name="gender">
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select>
+        </fieldset>
+        <fieldset>
+          <textarea id="address" placeholder="Alamat" tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+          <label for="firstname">Storage Option</label>
+          <select id="storage-option" name="storage-option">
+            <option value="local">local</option>
+            <option value="session">session</option>
+            <option value="cookie">cookie</option>
+        </select>
+        </fieldset>
+        <fieldset>
+          <button type="submit" id="button1">Button 1</button>
+          <button type="submit" id="button2">Button 2</button>
+        </fieldset>
+      </form>
+
+      <div id="result"></div>
+    </div>
+  </main>
+
+  <script type="module" src="./js/script.js"></script>
+</body>
+</html>
