@@ -1,6 +1,6 @@
 import { addLocalStorage, addSessionStorage, addCookieStorage } from './helpers/storage-option.js';
 
-const btn1 = document.getElementById('button1');
+const btn2 = document.getElementById('button2');
 const result = document.getElementById('result');
 
 const firstname = document.getElementById('firstname');
@@ -10,21 +10,8 @@ const address = document.getElementById('address');
 const storageType = document.getElementById('storage-option');
 
 export function btn2Click() {
-  btn1.addEventListener('click', (event) => {
+  btn2.addEventListener('click', (event) => {
     event.preventDefault();
-    localStorage.clear();
-    sessionStorage.clear();
-
-    if (document.cookie.length > 0) {
-      let cookies = document.cookie.split(';');
-
-      for (let i = 0; i < cookies.length; i++) {
-        let cookieName = cookies[i].split('=')[0].trim();
-        document.cookie = cookieName + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-      }
-    }
-
-    result.innerHTML = '';
 
     let item;
 
